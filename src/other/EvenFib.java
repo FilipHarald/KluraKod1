@@ -7,12 +7,12 @@ public class EvenFib {
 		int sum = 0;
 		int temp = 0;
 		while(nbr <= 4000000){
-			if (nbr % 2 == 0){
-				sum += nbr;
-			}
 			temp = nbr;
 			nbr = prevNbr + nbr;
 			prevNbr = temp;
+			if (nbr % 2 == 0){
+				sum += nbr;
+			}
 		}
 		System.out.println(sum);
 	}
